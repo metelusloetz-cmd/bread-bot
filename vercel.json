@@ -1,0 +1,17 @@
+{
+  "functions": {
+    "api/**/*.js": {
+      "maxDuration": 30
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/cron/reminders?period=morning",
+      "schedule": "0 22 * * *"
+    },
+    {
+      "path": "/api/cron/reminders?period=evening",
+      "schedule": "0 10 * * *"
+    }
+  ]
+}
